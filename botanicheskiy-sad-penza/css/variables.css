@@ -1,18 +1,18 @@
-/* Дизайн-токены проекта «Sirelis» */
+/* Дизайн-токены проекта «Ботанический сад» */
 
 :root {
   /* Цвета */
-  --color-bg-main: #FAF7F2;
-  --color-bg-secondary: #F2ECE1;
+  --color-bg-main: #FBF8FC;
+  --color-bg-secondary: #F5E6F0;
   --color-surface: #FFFFFF;
-  --color-primary: #C87D87;
-  --color-primary-hover: #B36872;
-  --color-accent-lilac: #8E7A9E;
-  --color-accent-gold: #B59B6D;
-  --color-text-main: #2E2A27;
-  --color-text-muted: #6E665F;
-  --color-border: #E4DBCC;
-  --color-overlay: rgba(46, 42, 39, 0.5);
+  --color-primary: #9B7EDE;
+  --color-primary-hover: #8265C9;
+  --color-accent-lilac: #7E63B8;
+  --color-accent-gold: #C4A9DC;
+  --color-text-main: #2E2A33;
+  --color-text-muted: #6E6577;
+  --color-border: #EADFEC;
+  --color-overlay: rgba(46, 42, 51, 0.5);
 
   /* Шрифты */
   --font-heading: Georgia, 'Times New Roman', serif;
