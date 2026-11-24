@@ -2,17 +2,17 @@
 
 :root {
   /* Цвета */
-  --color-bg-main: #FBF8FE;
+  --color-bg-main: #FBF8FD;
   --color-bg-secondary: #F5E6F0;
   --color-surface: #FFFFFF;
   --color-primary: #9B7EDE;
-  --color-primary-hover: #8466CC;
-  --color-accent-lilac: #9B7EDE;
-  --color-accent-gold: #C2A6EC;
-  --color-text-main: #2A2733;
-  --color-text-muted: #6B6577;
-  --color-border: #E8DBEF;
-  --color-overlay: rgba(46, 42, 39, 0.5);
+  --color-primary-hover: #8365C9;
+  --color-accent-lilac: #B9A3E8;
+  --color-accent-gold: #B892D6;
+  --color-text-main: #2E2A33;
+  --color-text-muted: #6E6675;
+  --color-border: #E6D9EE;
+  --color-overlay: rgba(46, 42, 51, 0.5);
 
   /* Шрифты */
   --font-heading: Georgia, 'Times New Roman', serif;

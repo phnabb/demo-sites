@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Иллюстрация букета Sirelis в пудрово-сиреневой палитре">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Иллюстрация букета Цветарий в лавандово-пудровой палитре">
   <defs>
     <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FAF7F2"/>
-      <stop offset="1" stop-color="#F2ECE1"/>
+      <stop offset="0" stop-color="#FBF8FD"/>
+      <stop offset="1" stop-color="#F5E6F0"/>
     </linearGradient>
     <radialGradient id="heroGlow" cx="0.5" cy="0.4" r="0.65">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="heroWrap" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7E7E9"/>
-      <stop offset="1" stop-color="#E7C6CC"/>
+      <stop offset="0" stop-color="#F1E7FB"/>
+      <stop offset="1" stop-color="#D9C7F0"/>
     </linearGradient>
     <g id="heroRose">
-      <circle r="46" fill="#E7C6CC"/>
-      <circle r="34" fill="#DCA9B2"/>
-      <circle r="22" fill="#C87D87"/>
-      <circle r="10" fill="#B36872"/>
+      <circle r="46" fill="#D9C7F0"/>
+      <circle r="34" fill="#C3A9EA"/>
+      <circle r="22" fill="#9B7EDE"/>
+      <circle r="10" fill="#8365C9"/>
     </g>
     <g id="heroLilac">
-      <circle r="36" fill="#C9BCD6"/>
-      <circle r="26" fill="#AF9EC3"/>
-      <circle r="15" fill="#8E7A9E"/>
+      <circle r="36" fill="#D8C9F2"/>
+      <circle r="26" fill="#C3A9EA"/>
+      <circle r="15" fill="#9B7EDE"/>
     </g>
     <g id="heroPeony">
-      <circle r="54" fill="#F3D9DC"/>
-      <circle r="42" fill="#EBC3C8"/>
-      <circle r="28" fill="#DCA9B2"/>
-      <circle r="14" fill="#C87D87"/>
+      <circle r="54" fill="#F7E9F8"/>
+      <circle r="42" fill="#EBD3F0"/>
+      <circle r="28" fill="#D9C7F0"/>
+      <circle r="14" fill="#9B7EDE"/>
     </g>
     <g id="heroGold">
-      <circle r="30" fill="#DFCFA8"/>
-      <circle r="20" fill="#C7B182"/>
-      <circle r="10" fill="#B59B6D"/>
+      <circle r="30" fill="#E4D3F3"/>
+      <circle r="20" fill="#C9AEEA"/>
+      <circle r="10" fill="#B892D6"/>
     </g>
     <g id="heroLeaf">
       <ellipse rx="38" ry="15" fill="#9BAE8E"/>
@@ -41,8 +41,8 @@
 
   <rect width="1600" height="1000" fill="url(#heroBg)"/>
   <circle cx="820" cy="420" r="430" fill="url(#heroGlow)"/>
-  <circle cx="1290" cy="230" r="180" fill="#F2E7E9" opacity="0.7"/>
-  <circle cx="300" cy="780" r="220" fill="#EDE7F0" opacity="0.6"/>
+  <circle cx="1290" cy="230" r="180" fill="#F3E9FA" opacity="0.7"/>
+  <circle cx="300" cy="780" r="220" fill="#EDE4F7" opacity="0.6"/>
 
   <!-- зелень -->
   <g transform="translate(820 520)">
@@ -56,8 +56,8 @@
 
   <!-- упаковка -->
   <path d="M820 520 C 630 620 570 810 630 890 L 1010 890 C 1070 810 1010 620 820 520 Z" fill="url(#heroWrap)" opacity="0.95"/>
-  <path d="M820 520 C 760 650 740 780 750 890" stroke="#D9BCC2" stroke-width="6" fill="none" opacity="0.55"/>
-  <path d="M820 520 C 880 650 900 780 890 890" stroke="#D9BCC2" stroke-width="6" fill="none" opacity="0.55"/>
+  <path d="M820 520 C 760 650 740 780 750 890" stroke="#CBB6E6" stroke-width="6" fill="none" opacity="0.55"/>
+  <path d="M820 520 C 880 650 900 780 890 890" stroke="#CBB6E6" stroke-width="6" fill="none" opacity="0.55"/>
 
   <!-- цветы -->
   <use href="#heroPeony" transform="translate(820 470)"/>
