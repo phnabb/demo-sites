@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Заглушка изображения" preserveAspectRatio="xMidYMid meet">
-  <rect x="1" y="1" width="398" height="298" fill="#F2ECE1" stroke="#B59B6D" stroke-width="2" rx="8"/>
+  <rect x="1" y="1" width="398" height="298" fill="#F5E6F0" stroke="#A9749E" stroke-width="2" rx="8"/>
   <!-- Условная фигура-цветок -->
-  <g transform="translate(200 150)" fill="none" stroke="#B59B6D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(200 150)" fill="none" stroke="#A9749E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="0" cy="-46" r="26"/>
     <circle cx="44" cy="-15" r="26"/>
     <circle cx="27" cy="38" r="26"/>
     <circle cx="-27" cy="38" r="26"/>
     <circle cx="-44" cy="-15" r="26"/>
-    <circle cx="0" cy="0" r="16" fill="#C87D87" stroke="none"/>
+    <circle cx="0" cy="0" r="16" fill="#9B7EDE" stroke="none"/>
   </g>
-  <line x1="200" y1="196" x2="200" y2="256" stroke="#B59B6D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="196" x2="200" y2="256" stroke="#A9749E" stroke-width="3" stroke-linecap="round"/>
 </svg>

@@ -1,18 +1,18 @@
-/* Дизайн-токены проекта «Sirelis» */
+/* Дизайн-токены проекта «Магия цветов 58» */
 
 :root {
   /* Цвета */
-  --color-bg-main: #FAF7F2;
-  --color-bg-secondary: #F2ECE1;
+  --color-bg-main: #FBF8FD;
+  --color-bg-secondary: #F5E6F0;
   --color-surface: #FFFFFF;
-  --color-primary: #C87D87;
-  --color-primary-hover: #B36872;
-  --color-accent-lilac: #8E7A9E;
-  --color-accent-gold: #B59B6D;
-  --color-text-main: #2E2A27;
-  --color-text-muted: #6E665F;
-  --color-border: #E4DBCC;
-  --color-overlay: rgba(46, 42, 39, 0.5);
+  --color-primary: #9B7EDE;
+  --color-primary-hover: #7E63C4;
+  --color-accent-lilac: #8B6EC9;
+  --color-accent-rose: #A9749E;
+  --color-text-main: #2E2638;
+  --color-text-muted: #6E6479;
+  --color-border: #E6D9F2;
+  --color-overlay: rgba(46, 38, 56, 0.5);
 
   /* Шрифты */
   --font-heading: Georgia, 'Times New Roman', serif;
@@ -66,9 +66,9 @@
   --z-sheet: 100;
 
   /* Тени */
-  --shadow-soft: 0 2px 8px rgba(46, 42, 39, 0.06);
-  --shadow-card: 0 6px 20px rgba(46, 42, 39, 0.1);
-  --shadow-bar: 0 -2px 12px rgba(46, 42, 39, 0.08);
+  --shadow-soft: 0 2px 8px rgba(46, 38, 56, 0.06);
+  --shadow-card: 0 6px 20px rgba(46, 38, 56, 0.1);
+  --shadow-bar: 0 -2px 12px rgba(46, 38, 56, 0.08);
 
   /* Переходы */
   --transition-base: 0.2s ease;

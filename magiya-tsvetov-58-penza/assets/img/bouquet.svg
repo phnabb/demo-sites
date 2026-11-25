@@ -1,48 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Иллюстрация букета в пастельных тонах">
   <defs>
     <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FAF7F2"/>
-      <stop offset="1" stop-color="#F2ECE1"/>
+      <stop offset="0" stop-color="#FBF8FD"/>
+      <stop offset="1" stop-color="#F5E6F0"/>
     </linearGradient>
     <radialGradient id="cardGlow" cx="0.5" cy="0.38" r="0.7">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="cardWrap" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7E7E9"/>
-      <stop offset="1" stop-color="#E7C6CC"/>
+      <stop offset="0" stop-color="#F7E9F6"/>
+      <stop offset="1" stop-color="#E9C9E5"/>
     </linearGradient>
     <g id="bRose">
-      <circle r="60" fill="#E7C6CC"/>
-      <circle r="44" fill="#DCA9B2"/>
-      <circle r="28" fill="#C87D87"/>
-      <circle r="13" fill="#B36872"/>
+      <circle r="60" fill="#E9C9E5"/>
+      <circle r="44" fill="#D8A9D0"/>
+      <circle r="28" fill="#9B7EDE"/>
+      <circle r="13" fill="#7E63C4"/>
     </g>
     <g id="bLilac">
-      <circle r="46" fill="#C9BCD6"/>
-      <circle r="32" fill="#AF9EC3"/>
-      <circle r="18" fill="#8E7A9E"/>
+      <circle r="46" fill="#D6C7F2"/>
+      <circle r="32" fill="#B9A3E8"/>
+      <circle r="18" fill="#8B6EC9"/>
     </g>
     <g id="bPeony">
-      <circle r="70" fill="#F3D9DC"/>
-      <circle r="54" fill="#EBC3C8"/>
-      <circle r="36" fill="#DCA9B2"/>
-      <circle r="18" fill="#C87D87"/>
+      <circle r="70" fill="#F5E6F0"/>
+      <circle r="54" fill="#EBD1E6"/>
+      <circle r="36" fill="#D8A9D0"/>
+      <circle r="18" fill="#9B7EDE"/>
     </g>
     <g id="bGold">
-      <circle r="40" fill="#DFCFA8"/>
-      <circle r="26" fill="#C7B182"/>
-      <circle r="13" fill="#B59B6D"/>
+      <circle r="40" fill="#D9C7F0"/>
+      <circle r="26" fill="#C2A9E6"/>
+      <circle r="13" fill="#A9749E"/>
     </g>
     <g id="bLeaf">
-      <ellipse rx="46" ry="18" fill="#9BAE8E"/>
+      <ellipse rx="46" ry="18" fill="#A8B99A"/>
     </g>
   </defs>
 
   <rect width="800" height="1000" fill="url(#cardBg)"/>
   <circle cx="400" cy="380" r="330" fill="url(#cardGlow)"/>
-  <circle cx="120" cy="200" r="120" fill="#F2E7E9" opacity="0.7"/>
-  <circle cx="690" cy="820" r="150" fill="#EDE7F0" opacity="0.6"/>
+  <circle cx="120" cy="200" r="120" fill="#F2E8FA" opacity="0.7"/>
+  <circle cx="690" cy="820" r="150" fill="#EDE4F8" opacity="0.6"/>
 
   <!-- зелень -->
   <g transform="translate(400 540)">
@@ -56,8 +56,8 @@
 
   <!-- упаковка -->
   <path d="M400 540 C 220 640 170 840 230 940 L 570 940 C 630 840 580 640 400 540 Z" fill="url(#cardWrap)" opacity="0.95"/>
-  <path d="M400 540 C 340 680 320 820 330 940" stroke="#D9BCC2" stroke-width="6" fill="none" opacity="0.55"/>
-  <path d="M400 540 C 460 680 480 820 470 940" stroke="#D9BCC2" stroke-width="6" fill="none" opacity="0.55"/>
+  <path d="M400 540 C 340 680 320 820 330 940" stroke="#D7BFE0" stroke-width="6" fill="none" opacity="0.55"/>
+  <path d="M400 540 C 460 680 480 820 470 940" stroke="#D7BFE0" stroke-width="6" fill="none" opacity="0.55"/>
 
   <!-- цветы -->
   <use href="#bPeony" transform="translate(400 470)"/>
