@@ -1,4 +1,4 @@
-// Скрипты сайта «Sirelis»
+// Скрипты сайта «Мы Цветы»
 (function () {
   'use strict';
 
@@ -69,7 +69,7 @@
   }
 
   /* 2. Корзина: хранилище, рендер и UI */
-  var CART_KEY = 'sirelis_cart';
+  var CART_KEY = 'mytsvety_cart';
   var cartMemory = []; // запасное хранилище, если localStorage недоступен
 
   // Чтение корзины с безопасным разбором и нормализацией позиций

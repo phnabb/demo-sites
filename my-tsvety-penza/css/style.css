@@ -335,6 +335,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .hero__badge {
@@ -485,6 +486,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .card__badge {
@@ -896,9 +898,9 @@
   width: 100%;
   max-width: 360px;
   margin-inline: auto;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
 }
 
 .salon__video-player {
@@ -906,6 +908,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 @media (min-width: 1024px) {
