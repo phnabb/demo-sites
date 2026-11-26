@@ -1,4 +1,4 @@
-// Скрипты сайта «Sirelis»
+// Скрипты сайта «Цветочный магазин»
 (function () {
   'use strict';
 
@@ -21,6 +21,7 @@
     initPanels();
     initBottomBar();
     initMatch();
+    initReveal();
   });
 
   /* 1. Бургер-меню */
@@ -69,7 +70,7 @@
   }
 
   /* 2. Корзина: хранилище, рендер и UI */
-  var CART_KEY = 'sirelis_cart';
+  var CART_KEY = 'tsvetochnyy-magazin-penza_cart';
   var cartMemory = []; // запасное хранилище, если localStorage недоступен
 
   // Чтение корзины с безопасным разбором и нормализацией позиций
@@ -676,7 +677,47 @@
     });
   }
 
-  /* 6. Каталог: переключатель размера и фильтры-табы */
+  /* 6. Плавное каскадное появление карточек и секций при скролле */
+  function initReveal() {
+    var sections = qsa('main > section');
+    var cards = qsa('.catalog__grid .card');
+    var targets = cards.concat(sections);
+    if (!targets.length) return;
+
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Без анимации: сразу показываем всё (доступность и старые браузеры)
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      targets.forEach(function (el) {
+        el.classList.add('reveal', 'is-visible');
+      });
+      return;
+    }
+
+    cards.forEach(function (card, index) {
+      card.classList.add('reveal');
+      // Каскад: задержка растёт по индексу карточки в сетке
+      card.style.setProperty('--reveal-delay', (Math.min(index, 7) * 70) + 'ms');
+    });
+
+    sections.forEach(function (section) {
+      section.classList.add('reveal');
+    });
+
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+    targets.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  /* 7. Каталог: переключатель размера и фильтры-табы */
   // Форматирует число в цену вида «4 900 ₽» с неразрывными пробелами
   function formatPrice(value) {
     var number = parseInt(value, 10);
@@ -743,7 +784,7 @@
     });
   }
 
-  /* 7. Квиз подбора букета: чипсы, маска телефона и заглушка отправки */
+  /* 8. Квиз подбора букета: чипсы, маска телефона и заглушка отправки */
   function initMatch() {
     var form = qs('.match__form');
     if (!form) return;

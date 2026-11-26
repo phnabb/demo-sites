@@ -1,22 +1,22 @@
-/* Дизайн-токены проекта «Sirelis» */
+/* Дизайн-токены проекта «Цветочный магазин» */
 
 :root {
-  /* Цвета */
-  --color-bg-main: #FAF7F2;
-  --color-bg-secondary: #F2ECE1;
+  /* Цвета: палитра «Чернильный синий» */
+  --color-bg-main: #F2F4F9;
+  --color-bg-secondary: #E7ECF5;
   --color-surface: #FFFFFF;
-  --color-primary: #C87D87;
-  --color-primary-hover: #B36872;
-  --color-accent-lilac: #8E7A9E;
-  --color-accent-gold: #B59B6D;
-  --color-text-main: #2E2A27;
-  --color-text-muted: #6E665F;
-  --color-border: #E4DBCC;
-  --color-overlay: rgba(46, 42, 39, 0.5);
+  --color-primary: #2E4A7D;
+  --color-primary-hover: #243A63;
+  --color-accent-lilac: #7B87B5;
+  --color-accent-gold: #B7A06A;
+  --color-text-main: #1B2230;
+  --color-text-muted: #626B7C;
+  --color-border: #DCE3F0;
+  --color-overlay: rgba(27, 34, 48, 0.5);
 
   /* Шрифты */
-  --font-heading: Georgia, 'Times New Roman', serif;
-  --font-ui: system-ui, -apple-system, sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-ui: 'Manrope', system-ui, -apple-system, sans-serif;
 
   /* Размеры текста */
   --fs-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
@@ -66,9 +66,12 @@
   --z-sheet: 100;
 
   /* Тени */
-  --shadow-soft: 0 2px 8px rgba(46, 42, 39, 0.06);
-  --shadow-card: 0 6px 20px rgba(46, 42, 39, 0.1);
-  --shadow-bar: 0 -2px 12px rgba(46, 42, 39, 0.08);
+  --shadow-soft: 0 2px 10px rgba(27, 34, 48, 0.06);
+  --shadow-card:
+    0 18px 38px -16px rgba(27, 34, 48, 0.22),
+    0 8px 18px -10px rgba(46, 74, 125, 0.16),
+    0 0 0 1px rgba(46, 74, 125, 0.05);
+  --shadow-bar: 0 -2px 12px rgba(27, 34, 48, 0.08);
 
   /* Переходы */
   --transition-base: 0.2s ease;
