@@ -1,22 +1,22 @@
-/* Дизайн-токены проекта «Sirelis» */
+/* Дизайн-токены проекта «Elite Flowers» */
 
 :root {
-  /* Цвета */
-  --color-bg-main: #FAF7F2;
-  --color-bg-secondary: #F2ECE1;
+  /* Цвета — палитра «Шалфей и лён» */
+  --color-bg-main: #F5F7F3;
+  --color-bg-secondary: #E8EEE5;
   --color-surface: #FFFFFF;
-  --color-primary: #C87D87;
-  --color-primary-hover: #B36872;
-  --color-accent-lilac: #8E7A9E;
-  --color-accent-gold: #B59B6D;
-  --color-text-main: #2E2A27;
-  --color-text-muted: #6E665F;
-  --color-border: #E4DBCC;
-  --color-overlay: rgba(46, 42, 39, 0.5);
+  --color-primary: #3F6B57;
+  --color-primary-hover: #335846;
+  --color-accent-lilac: #9AA894;
+  --color-accent-gold: #B4A483;
+  --color-text-main: #1F2A24;
+  --color-text-muted: #5F6F66;
+  --color-border: #DCE4D8;
+  --color-overlay: rgba(31, 42, 36, 0.5);
 
   /* Шрифты */
-  --font-heading: Georgia, 'Times New Roman', serif;
-  --font-ui: system-ui, -apple-system, sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-ui: 'Manrope', system-ui, -apple-system, sans-serif;
 
   /* Размеры текста */
   --fs-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
@@ -24,7 +24,7 @@
   --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
   --fs-lg: clamp(1.125rem, 1.06rem + 0.3vw, 1.25rem);
   --fs-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
-  --fs-h2: clamp(1.5rem, 1.25rem + 1.2vw, 2rem);
+  --fs-h2: clamp(1.75rem, 1.35rem + 1.6vw, 2.5rem);
 
   /* Насыщенность */
   --fw-medium: 500;
@@ -48,7 +48,7 @@
   /* Радиусы */
   --radius-sm: 4px;
   --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-lg: 18px;
   --radius-full: 999px;
   --radius-sheet: 20px;
 
@@ -66,9 +66,9 @@
   --z-sheet: 100;
 
   /* Тени */
-  --shadow-soft: 0 2px 8px rgba(46, 42, 39, 0.06);
-  --shadow-card: 0 6px 20px rgba(46, 42, 39, 0.1);
-  --shadow-bar: 0 -2px 12px rgba(46, 42, 39, 0.08);
+  --shadow-soft: 0 2px 8px rgba(31, 42, 36, 0.06);
+  --shadow-card: 0 12px 28px rgba(31, 42, 36, 0.12);
+  --shadow-bar: 0 -2px 12px rgba(31, 42, 36, 0.08);
 
   /* Переходы */
   --transition-base: 0.2s ease;

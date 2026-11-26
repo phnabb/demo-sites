@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sirelis — цветочный салон</title>
-  <meta name="description" content="Sirelis — цветочный салон: свежие букеты, авторские композиции, подбор букета под повод и бюджет, доставка цветов по городу.">
+  <title>Elite Flowers — цветочная студия в Пензе</title>
+  <meta name="description" content="Elite Flowers — цветочная студия в Пензе: сдержанные букеты из сезонных цветов, подбор под повод и бюджет, фото перед отправкой и доставка по Пензе.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,7 +18,7 @@
   <header class="header">
     <div class="header__inner container">
       <a class="header__logo" href="#top">
-        <span class="header__logo-text">Sirelis</span>
+        <span class="header__logo-text">Elite Flowers</span>
       </a>
 
       <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
@@ -41,7 +44,7 @@
         </ul>
       </nav>
 
-      <a class="header__phone" href="tel:+79969616000">+7 (996) 961-60-00</a>
+      <a class="header__phone" href="tel:+79061563400">+7 (906) 156-34-00</a>
 
       <button class="header__cart" type="button" data-cart-open aria-label="Открыть корзину" aria-controls="cart">
         <svg class="header__cart-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
@@ -61,18 +64,19 @@
     <section class="hero" id="hero">
       <div class="hero__inner container">
         <div class="hero__content">
-          <h1 class="hero__title">Sirelis</h1>
-          <p class="hero__subtitle">Свежие авторские букеты в Пензе. Фотографируем готовый букет перед отправкой и бережно доставляем за 60 минут</p>
+          <span class="hero__eyebrow">Пенза · Проспект Строителей, 49а</span>
+          <h1 class="hero__title">Elite Flowers<span class="hero__title-sub">Тихая роскошь в каждом букете</span></h1>
+          <p class="hero__subtitle">Студия флористики на Проспекте Строителей, 49а. Собираем сдержанные букеты из сезонных цветов, фотографируем перед отправкой и доставляем по Пензе в день заказа.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#catalog">Выбрать букет</a>
-            <button class="btn btn--ghost" type="button">Собрать по бюджету</button>
+            <a class="btn btn--ghost" href="#match">Подобрать по бюджету</a>
           </div>
         </div>
         <div class="hero__media">
-          <img class="hero__image" src="photos/photo_2026-11-07_14-07-28.jpg" alt="Букет из свежих цветов в салоне Sirelis" width="1600" height="1000">
+          <img class="hero__image" src="photos/photo_2026-11-07_14-07-28.jpg" alt="Букеты студии Elite Flowers в Пензе" width="1000" height="1250" loading="eager" decoding="async">
           <p class="hero__badge">
             <svg class="hero__badge-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
-              <path d="M20 6 9 17l-5-5" fill="none" stroke="#B59B6D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span class="hero__badge-text">Фото букета перед отправкой</span>
           </p>
@@ -94,23 +98,25 @@
         </div>
 
         <div class="catalog__grid">
-          <article class="card" data-category="hits" data-selected-size="m" data-id="rozovoe-utro" data-title="Розовое утро">
+          <article class="card" data-category="hits" data-selected-size="m" data-id="sage-saga" data-title="Сага">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-09_09-19-30.jpg" alt="Букет &quot;Розовое утро&quot; из пионовидных роз, эустомы и лизиантуса в пудровых тонах" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-09_09-19-30.jpg" alt="Букет «Сага» с пионовидными розами и эустомой в шалфейных тонах" width="800" height="1000" loading="lazy" decoding="async">
               <span class="card__badge">Хит</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Розовое утро</h3>
+              <div class="card__head">
+                <h3 class="card__title">Сага</h3>
+                <p class="card__price" data-price-value="3600">3&nbsp;600&nbsp;₽</p>
+              </div>
               <p class="card__composition">Пионовидные розы, эустома, лизиантус, эвкалипт</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Розовое утро»">
-                <button class="card__size" type="button" data-size="s" data-price="2900" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="3900" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="5400" aria-pressed="false">L</button>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Сага»">
+                <button class="card__size" type="button" data-size="s" data-price="2700" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="3600" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="4900" aria-pressed="false">L</button>
               </div>
-              <p class="card__price" data-price-value="3900">3&nbsp;900&nbsp;₽</p>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Розовое утро">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Сага">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -121,23 +127,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="hits" data-selected-size="m" data-id="letniy-sad" data-title="Летний сад">
+          <article class="card" data-category="hits" data-selected-size="m" data-id="lenyanoe-utro" data-title="Льняное утро">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-17_12-26-32.jpg" alt="Сборный букет &quot;Летний сад&quot; с хризантемами, ранункулюсами и гвоздикой" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-17_12-26-32.jpg" alt="Полевой букет «Льняное утро» с ромашками и льном" width="800" height="1000" loading="lazy" decoding="async">
               <span class="card__badge">Хит</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Летний сад</h3>
-              <p class="card__composition">Кустовые хризантемы, ранункулюсы, гвоздика, эвкалипт</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Летний сад»">
-                <button class="card__size" type="button" data-size="s" data-price="3900" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="4900" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="6400" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Льняное утро</h3>
+                <p class="card__price" data-price-value="3100">3&nbsp;100&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="4900">4&nbsp;900&nbsp;₽</p>
+              <p class="card__composition">Ромашка, кустовая хризантема, лён, эвкалипт</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Льняное утро»">
+                <button class="card__size" type="button" data-size="s" data-price="2200" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="3100" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="4300" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Летний сад">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Льняное утро">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -148,23 +156,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="mono" data-selected-size="m" data-id="pudrovyy-shelk" data-title="Пудровый шёлк">
+          <article class="card" data-category="mono" data-selected-size="m" data-id="olivkovaya-vetv" data-title="Оливковая ветвь">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-21_12-21-20.jpg" alt="Монобукет &quot;Пудровый шёлк&quot; из пионовидных роз мягкого розового оттенка" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-21_12-21-20.jpg" alt="Монобукет «Оливковая ветвь» из белой эустомы с оливковой зеленью" width="800" height="1000" loading="lazy" decoding="async">
               <span class="card__badge">Монобукет</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Пудровый шёлк</h3>
-              <p class="card__composition">Пионовидные розы, эустома, зелень эвкалипта</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Пудровый шёлк»">
-                <button class="card__size" type="button" data-size="s" data-price="4500" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="5900" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="7400" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Оливковая ветвь</h3>
+                <p class="card__price" data-price-value="4500">4&nbsp;500&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="5900">5&nbsp;900&nbsp;₽</p>
+              <p class="card__composition">Белая эустома, оливковые ветви, эвкалипт</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Оливковая ветвь»">
+                <button class="card__size" type="button" data-size="s" data-price="3400" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="4500" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="5900" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Пудровый шёлк">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Оливковая ветвь">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -175,22 +185,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="mono" data-selected-size="m" data-id="tyulpanmyy-vals" data-title="Тюльпанный вальс">
+          <article class="card" data-category="mono" data-selected-size="m" data-id="tikhiy-shelk" data-title="Тихий шёлк">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-21_18-42-05.jpg" alt="Монобукет &quot;Тюльпанный вальс&quot; из свежих тюльпанов с зеленью" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-21_18-42-05.jpg" alt="Монобукет «Тихий шёлк» из кремовых пионовидных роз" width="800" height="1000" loading="lazy" decoding="async">
+              <span class="card__badge">Монобукет</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Тюльпанный вальс</h3>
-              <p class="card__composition">Тюльпаны, аспидистра, зелень эвкалипта</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Тюльпанный вальс»">
-                <button class="card__size" type="button" data-size="s" data-price="1800" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="2400" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="3200" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Тихий шёлк</h3>
+                <p class="card__price" data-price-value="5100">5&nbsp;100&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="2400">2&nbsp;400&nbsp;₽</p>
+              <p class="card__composition">Кремовые пионовидные розы, гипсофила, эвкалипт</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Тихий шёлк»">
+                <button class="card__size" type="button" data-size="s" data-price="3900" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="5100" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="6700" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Тюльпанный вальс">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Тихий шёлк">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -201,23 +214,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="author" data-selected-size="m" data-id="nezhnost-provansa" data-title="Нежность Прованса">
+          <article class="card" data-category="author" data-selected-size="m" data-id="mednyy-sad" data-title="Медный сад">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-07_14-07-28.jpg" alt="Авторский букет &quot;Нежность Прованса&quot; с лавандой, эустомой и ранункулюсами" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-07_14-07-28.jpg" alt="Авторский букет «Медный сад» с ранункулюсами и астранцией" width="800" height="1000" loading="lazy" decoding="async">
               <span class="card__badge">Новинка</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Нежность Прованса</h3>
-              <p class="card__composition">Лаванда, эустома, ранункулюсы, эвкалипт</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Нежность Прованса»">
-                <button class="card__size" type="button" data-size="s" data-price="5400" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="6900" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="7900" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Медный сад</h3>
+                <p class="card__price" data-price-value="4300">4&nbsp;300&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="6900">6&nbsp;900&nbsp;₽</p>
+              <p class="card__composition">Ранункулюсы, кустовые хризантемы, гвоздика, астранция</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Медный сад»">
+                <button class="card__size" type="button" data-size="s" data-price="3200" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="4300" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="5600" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Нежность Прованса">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Медный сад">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -228,22 +243,24 @@
             </div>
           </article>
 
-          <article class="card" data-category="author" data-selected-size="m" data-id="utrennyaya-siren" data-title="Утренняя сирень">
+          <article class="card" data-category="author" data-selected-size="m" data-id="sentyabr-v-penze" data-title="Сентябрь в Пензе">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-09_09-19-30.jpg" alt="Авторский букет &quot;Утренняя сирень&quot; с сиренью, пионами и ранункулюсами" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-09_09-19-30.jpg" alt="Авторский букет «Сентябрь в Пензе» с георгинами и астрами" width="800" height="1000" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
-              <h3 class="card__title">Утренняя сирень</h3>
-              <p class="card__composition">Сирень, пионы, ранункулюсы, эустома</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Утренняя сирень»">
-                <button class="card__size" type="button" data-size="s" data-price="4200" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="5400" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="6900" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Сентябрь в Пензе</h3>
+                <p class="card__price" data-price-value="3900">3&nbsp;900&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="5400">5&nbsp;400&nbsp;₽</p>
+              <p class="card__composition">Георгины, астры, рускус, эвкалипт</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Сентябрь в Пензе»">
+                <button class="card__size" type="button" data-size="s" data-price="2900" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="3900" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="5200" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Утренняя сирень">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Сентябрь в Пензе">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -254,23 +271,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="box" data-selected-size="m" data-id="milk-rouz" data-title="Милк Роуз">
+          <article class="card" data-category="box" data-selected-size="m" data-id="shalfeynyy-boks" data-title="Шалфейный бокс">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-17_12-26-32.jpg" alt="Композиция &quot;Милк Роуз&quot; в коробке с розами, хризантемами и эустомой" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-17_12-26-32.jpg" alt="Композиция «Шалфейный бокс» с гортензией и розами в коробке" width="800" height="1000" loading="lazy" decoding="async">
               <span class="card__badge">В коробке</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Милк Роуз</h3>
-              <p class="card__composition">Розы, кустовые хризантемы, эустома, лизиантус</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Милк Роуз»">
-                <button class="card__size" type="button" data-size="s" data-price="3600" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="4700" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="6200" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Шалфейный бокс</h3>
+                <p class="card__price" data-price-value="5200">5&nbsp;200&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="4700">4&nbsp;700&nbsp;₽</p>
+              <p class="card__composition">Гортензия, розы, эустома, шалфей</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Шалфейный бокс»">
+                <button class="card__size" type="button" data-size="s" data-price="4000" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="5200" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="6800" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Милк Роуз">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Шалфейный бокс">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -281,22 +300,25 @@
             </div>
           </article>
 
-          <article class="card" data-category="box" data-selected-size="m" data-id="pudra-i-zoloto" data-title="Пудра и золото">
+          <article class="card" data-category="box" data-selected-size="m" data-id="len-i-lizianthus" data-title="Лён и лизиантус">
             <div class="card__media">
-              <img class="card__image" src="photos/photo_2026-11-21_12-21-20.jpg" alt="Композиция &quot;Пудра и золото&quot; в коробке с гортензией, розами и гвоздикой" width="800" height="1000" loading="lazy" decoding="async">
+              <img class="card__image" src="photos/photo_2026-11-21_12-21-20.jpg" alt="Композиция «Лён и лизиантус» в коробке с нежными цветами" width="800" height="1000" loading="lazy" decoding="async">
+              <span class="card__badge">В коробке</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Пудра и золото</h3>
-              <p class="card__composition">Гортензия, розы, гвоздика, эвкалипт</p>
-              <div class="card__sizes" role="group" aria-label="Размер букета «Пудра и золото»">
-                <button class="card__size" type="button" data-size="s" data-price="2400" aria-pressed="false">S</button>
-                <button class="card__size card__size--active" type="button" data-size="m" data-price="3200" aria-pressed="true">M</button>
-                <button class="card__size" type="button" data-size="l" data-price="4500" aria-pressed="false">L</button>
+              <div class="card__head">
+                <h3 class="card__title">Лён и лизиантус</h3>
+                <p class="card__price" data-price-value="3500">3&nbsp;500&nbsp;₽</p>
               </div>
-              <p class="card__price" data-price-value="3200">3&nbsp;200&nbsp;₽</p>
+              <p class="card__composition">Лизиантус, кустовая хризантема, лён, эвкалипт</p>
+              <div class="card__sizes" role="group" aria-label="Размер букета «Лён и лизиантус»">
+                <button class="card__size" type="button" data-size="s" data-price="2600" aria-pressed="false">S</button>
+                <button class="card__size card__size--active" type="button" data-size="m" data-price="3500" aria-pressed="true">M</button>
+                <button class="card__size" type="button" data-size="l" data-price="4700" aria-pressed="false">L</button>
+              </div>
               <div class="card__actions">
                 <button class="card__btn" type="button" data-cart-add>В корзину</button>
-                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Пудра и золото">
+                <button class="card__book" type="button" data-book-open aria-label="Бронь в 1 клик: Лён и лизиантус">
                   <svg class="card__book-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
                     <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -310,11 +332,52 @@
       </div>
     </section>
 
+    <!-- Преимущества -->
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <h2 class="advantages__title">Сервис студии Elite Flowers</h2>
+
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <img src="assets/icons/icon-delivery.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="advantages__item-title">Доставка по Пензе и Арбеково</h3>
+            <p class="advantages__text">Привезём букет в пределах Пензы в течение 2 часов, в Арбеково — от 30 минут.</p>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <img src="assets/icons/icon-photo.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="advantages__item-title">Фото готового букета</h3>
+            <p class="advantages__text">Перед отправкой пришлём снимок — вы увидите букет до вручения.</p>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <img src="assets/icons/icon-card.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="advantages__item-title">Открытка от руки бесплатно</h3>
+            <p class="advantages__text">Напишем ваши слова на открытке и вложим её в букет без доплаты.</p>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <img src="assets/icons/icon-care.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="advantages__item-title">Самовывоз с Проспекта Строителей</h3>
+            <p class="advantages__text">Заберите заказ в студии на Проспекте Строителей, 49а — ежедневно с 9:00 до 21:00.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Подбор букета -->
     <section class="match" id="match">
       <div class="container">
-        <h2 class="match__title">Соберём букет под ваш повод</h2>
-        <p class="match__subtitle">Ответьте на три вопроса — флорист подберёт варианты под ваш бюджет.</p>
+        <h2 class="match__title">Соберём букет под ваш повод в Пензе</h2>
+        <p class="match__subtitle">Ответьте на три вопроса — флорист Elite Flowers подберёт варианты под ваш бюджет и пришлёт подборку в мессенджер.</p>
 
         <form class="match__form" action="#" method="post">
           <div class="match__field">
@@ -323,7 +386,7 @@
               <button class="match__chip match__chip--active" type="button" data-value="none" aria-pressed="true">Без повода</button>
               <button class="match__chip" type="button" data-value="birthday" aria-pressed="false">День рождения</button>
               <button class="match__chip" type="button" data-value="date" aria-pressed="false">Свидание</button>
-              <button class="match__chip" type="button" data-value="anniversary" aria-pressed="false">Юбилей</button>
+              <button class="match__chip" type="button" data-value="anniversary" aria-pressed="false">Годовщина</button>
             </div>
             <input class="match__value" type="hidden" name="occasion" value="none">
           </div>
@@ -331,9 +394,9 @@
           <div class="match__field">
             <span class="match__label">Бюджет</span>
             <div class="match__chips" role="group" aria-label="Бюджет">
-              <button class="match__chip match__chip--active" type="button" data-value="low" aria-pressed="true">до 3 000 ₽</button>
-              <button class="match__chip" type="button" data-value="mid" aria-pressed="false">3 000–5 000 ₽</button>
-              <button class="match__chip" type="button" data-value="high" aria-pressed="false">от 5 000 ₽</button>
+              <button class="match__chip match__chip--active" type="button" data-value="low" aria-pressed="true">до 2 500 ₽</button>
+              <button class="match__chip" type="button" data-value="mid" aria-pressed="false">2 500–4 000 ₽</button>
+              <button class="match__chip" type="button" data-value="high" aria-pressed="false">от 4 000 ₽</button>
             </div>
             <input class="match__value" type="hidden" name="budget" value="low">
           </div>
@@ -341,7 +404,7 @@
           <div class="match__field">
             <span class="match__label">Оттенок</span>
             <div class="match__chips" role="group" aria-label="Оттенок">
-              <button class="match__chip match__chip--active" type="button" data-value="powder" aria-pressed="true">Нежный пудровый</button>
+              <button class="match__chip match__chip--active" type="button" data-value="powder" aria-pressed="true">Пудровый шалфей</button>
               <button class="match__chip" type="button" data-value="lilac" aria-pressed="false">Сиреневый</button>
               <button class="match__chip" type="button" data-value="cream" aria-pressed="false">Бело-кремовый</button>
               <button class="match__chip" type="button" data-value="bright" aria-pressed="false">Яркий</button>
@@ -350,7 +413,7 @@
           </div>
 
           <div class="match__field">
-            <label class="match__label" for="match-phone">Телефон</label>
+            <label class="match__label" for="match-phone">Телефон для подборки</label>
             <input class="match__phone" id="match-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18" required>
           </div>
 
@@ -360,70 +423,25 @@
       </div>
     </section>
 
-    <!-- Преимущества -->
-    <section class="advantages" id="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Сервис с заботой о каждом букете</h2>
-
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="assets/icons/icon-photo.svg" alt="" width="32" height="32">
-            </div>
-            <h3 class="advantages__item-title">Фото букета до отправки</h3>
-            <p class="advantages__text">Покажем фото вашего букета перед доставкой — всё как задумано.</p>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="assets/icons/icon-card.svg" alt="" width="32" height="32">
-            </div>
-            <h3 class="advantages__item-title">Открытка с вашим текстом бесплатно</h3>
-            <p class="advantages__text">Напишем ваши слова от руки и вложим открытку бесплатно.</p>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="assets/icons/icon-care.svg" alt="" width="32" height="32">
-            </div>
-            <h3 class="advantages__item-title">Подкормка для стойкости цветов</h3>
-            <p class="advantages__text">Добавим подкормку, чтобы букет радовал дольше.</p>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="assets/icons/icon-delivery.svg" alt="" width="32" height="32">
-            </div>
-            <h3 class="advantages__item-title">Бережная аква-доставка</h3>
-            <p class="advantages__text">Доставим букет в воде — цветы приедут свежими и упругими.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- Салон и самовывоз -->
     <section class="salon" id="contacts">
       <div class="container">
-        <h2 class="salon__title">Салон Sirelis и самовывоз</h2>
+        <h2 class="salon__title">Салон Elite Flowers и самовывоз</h2>
 
         <div class="salon__grid">
           <div class="salon__content">
-            <p class="salon__text">Уютный павильон с панорамными окнами, мягким светом и живыми цветами в каждом углу. Здесь легко выбрать букет вживую, а после — забрать заказ самовывозом в удобное время.</p>
+            <p class="salon__text">Камерная цветочная студия в Арбеково: приглушённый свет, льняные фактуры и сезонные цветы на витрине. Здесь можно собрать букет вживую с флористом или забрать готовый заказ с Проспекта Строителей.</p>
 
-            <p class="salon__rating">★ 4.4 на 2ГИС</p>
+            <p class="salon__rating">★ 3.4 на 2ГИС</p>
 
             <ul class="salon__list">
               <li class="salon__item">
                 <span class="salon__label">Адрес</span>
-                <span class="salon__value">г. Пенза, Проспект Строителей, 154Б/1 (м-н Арбеково, 1 этаж)</span>
+                <span class="salon__value">г. Пенза, Проспект Строителей, 49а</span>
               </li>
               <li class="salon__item">
                 <span class="salon__label">Телефон</span>
-                <a class="salon__value salon__link" href="tel:+79969616000">+7 (996) 961-60-00</a>
-              </li>
-              <li class="salon__item">
-                <span class="salon__label">Дополнительный телефон</span>
-                <a class="salon__value salon__link" href="tel:+79648722024">+7 (964) 872-20-24</a>
+                <a class="salon__value salon__link" href="tel:+79061563400">+7 (906) 156-34-00</a>
               </li>
               <li class="salon__item">
                 <span class="salon__label">Часы работы</span>
@@ -436,10 +454,7 @@
 
           <div class="salon__media">
             <div class="salon__video">
-              <video class="salon__video-player" controls playsinline preload="metadata" poster="photos/photo_2026-11-21_12-21-20.jpg" width="360" height="640">
-                <source src="photos/-593069146008775534.mp4" type="video/mp4">
-                Ваш браузер не поддерживает видео.
-              </video>
+              <img class="salon__video-player" src="photos/photo_2026-11-07_14-07-28.jpg" alt="Букеты студии Elite Flowers" loading="eager" decoding="async">
             </div>
           </div>
         </div>
@@ -452,7 +467,7 @@
   <footer class="footer">
     <div class="footer__inner container">
       <div class="footer__brand">
-        <span class="footer__logo">Sirelis</span>
+        <span class="footer__logo">Elite Flowers</span>
         <p class="footer__tagline">Цветы, которые говорят за вас</p>
       </div>
 
@@ -477,9 +492,8 @@
       <div class="footer__col">
         <h2 class="footer__title">Контакты</h2>
         <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="tel:+79969616000">+7 (996) 961-60-00</a></li>
-          <li class="footer__item"><a class="footer__link" href="tel:+79648722024">+7 (964) 872-20-24</a></li>
-          <li class="footer__item"><a class="footer__link" href="mailto:hello@sirelis.example">hello@sirelis.example</a></li>
+          <li class="footer__item"><a class="footer__link" href="tel:+79061563400">+7 (906) 156-34-00</a></li>
+          <li class="footer__item"><span class="footer__text">г. Пенза, Проспект Строителей, 49а</span></li>
           <li class="footer__item"><span class="footer__text">Ежедневно, 09:00 – 21:00</span></li>
         </ul>
       </div>
@@ -493,7 +507,7 @@
         </a>
       </div>
 
-      <p class="footer__copyright">© 2026 Sirelis. Все права защищены.</p>
+      <p class="footer__copyright">© 2026 Elite Flowers. Все права защищены.</p>
     </div>
   </footer>
 
@@ -554,7 +568,7 @@
       <form class="cart__form" data-cart-form>
         <div class="cart__delivery" role="group" aria-label="Способ получения">
           <button class="cart__delivery-tab cart__delivery-tab--active" type="button" data-delivery="courier" aria-pressed="true">Доставка курьером</button>
-          <button class="cart__delivery-tab" type="button" data-delivery="pickup" aria-pressed="false">Самовывоз из салона Sirelis</button>
+          <button class="cart__delivery-tab" type="button" data-delivery="pickup" aria-pressed="false">Самовывоз из салона Elite Flowers</button>
         </div>
         <div class="cart__delivery-panel" data-delivery-panel="courier">
           <label class="cart__field">
@@ -588,7 +602,7 @@
           <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 25l6 6 12-13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <h3 class="cart__success-title">Заявка принята!</h3>
-        <p class="cart__success-text">Флорист Sirelis свяжется с вами для подтверждения. Спасибо за заказ.</p>
+        <p class="cart__success-text">Флорист Elite Flowers свяжется с вами для подтверждения. Спасибо за заказ.</p>
         <button class="btn btn--ghost cart__success-btn" type="button" data-cart-close>Продолжить покупки</button>
       </div>
     </div>
@@ -623,7 +637,7 @@
           <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 25l6 6 12-13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <h3 class="book__success-title">Бронь оформлена!</h3>
-        <p class="book__success-text">Мы закрепили букет за вами. Флорист свяжется с вами для подтверждения.</p>
+        <p class="book__success-text">Мы закрепили букет за вами. Флорист Elite Flowers свяжется с вами для подтверждения.</p>
         <button class="btn btn--ghost book__success-btn" type="button" data-book-close>Закрыть</button>
       </div>
     </div>
